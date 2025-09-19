@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "schoolpack:stone_golem",
+      "population_control": "ambient"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:brightness_filter": { "min": 7, "max": 15 },
+        "minecraft:biome_filter": {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "village"
+        },
+        "minecraft:weight": { "default": 10 },
+        "minecraft:herd": { "min_size": 1, "max_size": 1 },
+        "minecraft:spawn_chance": { "default": 0.6 }
+      }
+    ]
+  }
+}
